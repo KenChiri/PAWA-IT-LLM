@@ -105,3 +105,6 @@ Root Directory: frontend
 Build Command: npm install && npm run build
 Start Command: npm start
 Environment Variables: Set NEXT_PUBLIC_GRAPHQL_ENDPOINT to your live backend URL (e.g., https://....)
+
+
+

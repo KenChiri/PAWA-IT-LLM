@@ -3,6 +3,7 @@ from strawberry.fastapi import GraphQLRouter
 from .schema import schema
 from .core.config import settings
 from fastapi.middleware.cors import CORSMiddleware
+import os
 
 # Graphql Router
 graphql_app = GraphQLRouter(schema)
@@ -15,6 +16,7 @@ app = FastAPI(
 )
 origins = [
     "http://localhost:3000",
+    os.getenv("FRONTEND_URL", "https://pawa-it-lmm-frontend.onrender.com"),
 ]
 app.add_middleware(
     CORSMiddleware,
