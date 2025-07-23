@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --pawa-sky: 0 170 255;
+    --pawa-dark: 15 20 40;
+    --pawa-light-dark: 30 41 59;
+    --background: var(--pawa-dark);
+    --foreground: 222 222 222;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
