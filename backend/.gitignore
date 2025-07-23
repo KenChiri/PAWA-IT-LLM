@@ -7,3 +7,9 @@ venv.bak/
 .venv/
 
 
+
+__pycache__/
+lib/
+lib64/
+parts/
+pip-wheel-metadata/

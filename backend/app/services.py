@@ -1,6 +1,23 @@
+# import sqlite3
+# import json
+from contextlib import contextmanager
 import google.generativeai as genai
 from typing import List, Dict
 from .core.config import settings
+
+
+#--Databse setup
+# DB_FILE = "chat_history.db"
+
+# @contextmanager
+# def get_db_connection():
+#     """Context manager for handling database connections."""
+#     conn = sqlite3.connect(DB_FILE)
+#     try:
+#         yield conn
+#     finally:
+#         conn.close()
+
 
 # --- Client Initialization ---
 # Initializes the OpenAI client once when the module is loaded.
